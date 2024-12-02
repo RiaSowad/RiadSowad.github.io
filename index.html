@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome chez les Wilders</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Titre centré -->
+    <h1>Welcome chez les Wilders</h1>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occupation Selector</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+
+    
+
+    <select id="occupation">
+        <option value="">-- Select your occupation --</option>
+        <option value="student">I am a student</option>
+        <option value="employee">I am an employee</option>
+        <option value="government">I work for the government</option>
+        <option value="businessman">I am a business man</option>
+        <option value="nothing">I am doing nothing</option>
+    </select>
+
+
+<div id="image-container">
+        <img id="student" src="student.jpg" alt="Student">
+        <img id="employee" src="employee.jpg" alt="Employee">
+        <img id="government" src="government.jpg" alt="Government Worker">
+        <img id="businessman" src="businessman.jpg" alt="Businessman">
+        <img id="nothing" src="nothing.jpg" alt="Doing Nothing">
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+        const selectElement = document.getElementById('occupation');
+        const images = document.querySelectorAll('#image-container img');
+
+        selectElement.addEventListener('change', function() {
+            const selectedValue = selectElement.value;
+
+            // Masquer toutes les images
+            images.forEach(image => {
+                image.style.display = 'none';
+            });
+
+            // Afficher l'image correspondante si une option est sélectionnée
+            if (selectedValue) {
+                const selectedImage = document.getElementById(selectedValue);
+                if (selectedImage) {
+                    selectedImage.style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

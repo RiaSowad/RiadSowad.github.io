@@ -1,0 +1,30 @@
+
+body {
+   
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}img
+
+h1{
+font-size: 20px;
+text-align: center;
+color: #de7471
+}
+
+p{
+font-size: 15px;
+text-align: left;
+font-family: Helvetica, sans-serif;
+}
+
+body {
+background-color: #007471;
+}
+
+  
